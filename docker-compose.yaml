@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  practice:
+    container_name: postgres-practice
+    image: postgres:9.6
+    volumes:
+      - ./data:/var/lib/postgresql/data
+    environment:
+      POSTGRES_USER: ${DB_USER}
+      POSTGRES_PASSWORD: ${DB_PASSWORD}
+      POSTGRES_DB: ${DB_NAME}
+    ports:
+      - "5432:5432"
+    restart: always
