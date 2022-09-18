@@ -7,6 +7,8 @@
     "dev": "ts-node src/main.ts",
     "docker:up": "docker-compose up",
     "migration:run": "db-migrate up",
+    "seed": "ts-node src/seeds/generate.ts",
+    "clean": "ts-node src/seeds/clean.ts"
   },
   "keywords": [],
   "author": "",
