@@ -6,6 +6,7 @@
     "build": "tsc",
     "dev": "ts-node src/main.ts",
     "docker:up": "docker-compose up",
+    "migration:run": "db-migrate up",
   },
   "keywords": [],
   "author": "",
