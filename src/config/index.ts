@@ -4,6 +4,7 @@ export const DB = {
   name: process.env.DB_NAME || 'postgres',
   user: process.env.DB_USER || 'postgres',
   password: process.env.DB_PASSWORD || 'postgres',
+  container: process.env.DB_CONTAINER_NAME || 'postgres-practice'
 }
 
 export const PORT = process.env.PORT || 3000
