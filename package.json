@@ -6,7 +6,9 @@
     "build": "tsc",
     "dev": "ts-node src/main.ts",
     "docker:up": "docker-compose up",
-    "migration:run": "db-migrate up",
+    "migration:create": "db-migrate create -m ./database/migrations",
+    "migration:up": "db-migrate up -m ./database/migrations",
+    "migration:down": "db-migrate down -m ./database/migrations",
     "seed": "ts-node src/seeds/generate.ts",
     "clean": "ts-node src/seeds/clean.ts"
   },
